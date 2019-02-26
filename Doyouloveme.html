@@ -7,15 +7,14 @@
 <body>
 <h1> Do you love me ?</h1>
     <button onclick="alert('Me too')">Yes</button>
-    <input type="button" onmouseover="abc()" value="No" id="ino" style="position: relative">
-<script type="text/javascript">
+    <input type="button" onmouseover="abc()" value="No" id="ino" style="position: absolute">
+<script>
     var x = document.getElementById('ino');
     var y=0;
     var z=0;
-    x.style.left = '0px';
 function abc() {
-    y=Math.random()*500;
-    z=Math.random()*500;
+    y=Math.random()*window.innerHeight;
+    z=Math.random()*window.innerWidth;
     document.getElementById("ino").style.left = z +'px';
     document.getElementById("ino").style.top = y+'px'
 }
